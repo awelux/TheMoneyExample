@@ -7,7 +7,7 @@ public class DollarTest {
 
 	@Test
 	public void testMultiplication() {
-		Dollar five = new Dollar();
+		Dollar five = new Dollar(5);
 		
 		five.times(2);
 		
