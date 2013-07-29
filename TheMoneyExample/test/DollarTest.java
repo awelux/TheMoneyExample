@@ -9,13 +9,13 @@ public class DollarTest {
 	public void testMultiplication() {
 		Dollar five = new Dollar(5);
 		
-		five.times(2);
+		Dollar product = five.times(2);
 		
-		assertEquals(10, five.amount);
+		assertEquals(10, product.amount);
 		
-		five.times(3);
+		product = five.times(3);
 		
-		assertEquals(15, five.amount);
+		assertEquals(15, product.amount);
 	}
 
 }
