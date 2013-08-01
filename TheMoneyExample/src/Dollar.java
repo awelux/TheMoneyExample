@@ -1,7 +1,7 @@
 
 public class Dollar {
 
-	public int amount;
+	private final int amount;
 
 	public Dollar(final int amount) {
 		this.amount = amount;
