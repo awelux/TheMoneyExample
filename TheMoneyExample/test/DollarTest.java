@@ -1,3 +1,4 @@
+import static junit.framework.Assert.assertFalse;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
@@ -8,7 +9,7 @@ public class DollarTest {
 
 	@Test
 	public void testMultiplication() {
-		Dollar five = new Dollar(5);
+		final Dollar five = new Dollar(5);
 
 		Dollar product = five.times(2);
 
@@ -22,5 +23,6 @@ public class DollarTest {
 	@Test
 	public void testEquality() {
 		assertTrue(new Dollar(5).equals(new Dollar(5)));
+		assertFalse(new Dollar(5).equals(new Dollar(6)));
 	}
 }
